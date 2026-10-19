@@ -1,0 +1,9 @@
+# Portfólio estático: HTML e CSS publicados na raiz do repositório.
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
