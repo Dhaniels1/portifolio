@@ -17,8 +17,8 @@ O site apresenta **Daniel Castro** como **Auxiliar de Tecnologia da Informação
 | --- | --- | --- | --- |
 | Biblioteca Digital | Laravel 12, PHP, PostgreSQL, Sanctum | [biblioteca-api](https://github.com/Dhaniels1/biblioteca-api) | [Abrir aplicação](https://biblioteca-api-dhaniels1.onrender.com) |
 | Dashboard de Vendas 2020 | Python, Dash, Plotly, Pandas | [dashboard-vendas-2020](https://github.com/Dhaniels1/dashboard-vendas-2020) | [Abrir dashboard](https://dashboard-vendas-2020.onrender.com) |
-| Óticas Malta | React, React Router, Tailwind CSS | [oticas-malta](https://github.com/Dhaniels1/oticas-malta) | Não verificada nesta revisão |
-| TechStore | HTML5, CSS3 | [TechStore](https://github.com/Dhaniels1/TechStore) | Código no GitHub |
+| Óticas Malta | React, React Router, Tailwind CSS | [oticas-malta](https://github.com/Dhaniels1/oticas-malta) | [Site estático](https://dhaniels1.github.io/oticas-malta/) — nova versão depende do build e deploy do GitHub Actions |
+| TechStore | HTML5, CSS3 | [TechStore](https://github.com/Dhaniels1/TechStore) | [Site estático](https://dhaniels1.github.io/TechStore/) — nova versão depende do GitHub Pages |
 | Cuidar Muriaé — Projeto de Extensão | JavaScript, HTML5, CSS3 | [Projeto-Extensao](https://github.com/Dhaniels1/Projeto-Extensao) | Protótipo em desenvolvimento; não é serviço oficial de hospitais |
 | Carrinho IoT com ESP32 | C++/Arduino, ESP32, Wi-Fi | [carrinho-iot-esp32](https://github.com/Dhaniels1/carrinho-iot-esp32) | Código e demonstração local; funcionalidades novas exigem testes no hardware |
 
