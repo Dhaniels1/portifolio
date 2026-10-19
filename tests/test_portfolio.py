@@ -80,11 +80,18 @@ class PortfolioTest(unittest.TestCase):
     def test_portfolio_mostra_projetos_reais(self):
         index = (ROOT / "index.html").read_text(encoding="utf-8")
         projects = (ROOT / "projetos.html").read_text(encoding="utf-8")
-        for repo in ("biblioteca-api", "dashboard-vendas-2020", "oticas-malta", "TechStore", "olamundoweb1"):
+        for repo in ("biblioteca-api", "dashboard-vendas-2020", "oticas-malta", "TechStore", "Projeto-Extensao", "carrinho-iot-esp32"):
             self.assertIn("https://github.com/Dhaniels1/" + repo, projects)
         for live in ("biblioteca-api-dhaniels1.onrender.com", "dashboard-vendas-2020.onrender.com"):
             self.assertIn(live, index)
             self.assertIn(live, projects)
+        self.assertNotIn("olamundoweb1", projects)
+        self.assertNotIn("TechWave", projects)
+        self.assertIn("FAMINAS", index)
+        self.assertIn("FAMINAS", (ROOT / "sobre.html").read_text(encoding="utf-8"))
+        self.assertIn("projeto acadêmico independente", projects.lower())
+        self.assertIn("pendentes de validação", projects)
+        self.assertEqual(projects.count('<article class="project-card">'), 6)
         self.assertNotIn("upando-solo", index.lower())
         self.assertNotIn("upando-solo", projects.lower())
         self.assertNotIn("Café Aconchego", projects)
