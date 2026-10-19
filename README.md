@@ -17,12 +17,12 @@ O site apresenta **Daniel Castro** como **Auxiliar de Tecnologia da Informação
 | --- | --- | --- | --- |
 | Biblioteca Digital | Laravel 12, PHP, PostgreSQL, Sanctum | [biblioteca-api](https://github.com/Dhaniels1/biblioteca-api) | [Abrir aplicação](https://biblioteca-api-dhaniels1.onrender.com) |
 | Dashboard de Vendas 2020 | Python, Dash, Plotly, Pandas | [dashboard-vendas-2020](https://github.com/Dhaniels1/dashboard-vendas-2020) | [Abrir dashboard](https://dashboard-vendas-2020.onrender.com) |
-| Óticas Malta | React, React Router, Tailwind CSS | [oticas-malta](https://github.com/Dhaniels1/oticas-malta) | [Site estático](https://dhaniels1.github.io/oticas-malta/) — nova versão depende do build e deploy do GitHub Actions |
-| TechStore | HTML5, CSS3 | [TechStore](https://github.com/Dhaniels1/TechStore) | [Site estático](https://dhaniels1.github.io/TechStore/) — nova versão depende do GitHub Pages |
+| Ateliê Lume (projeto Óticas Malta) | React, React Router, Tailwind CSS | [oticas-malta](https://github.com/Dhaniels1/oticas-malta) | [Site fictício no Netlify](https://oticas-malta-demo.netlify.app/) |
+| TechStore | HTML5, CSS3, imagens de IA | [TechStore](https://github.com/Dhaniels1/TechStore) | [Vitrine fictícia no GitHub Pages](https://dhaniels1.github.io/TechStore/) |
 | Cuidar Muriaé — Projeto de Extensão | JavaScript, HTML5, CSS3 | [Projeto-Extensao](https://github.com/Dhaniels1/Projeto-Extensao) | Protótipo em desenvolvimento; não é serviço oficial de hospitais |
 | Carrinho IoT com ESP32 | C++/Arduino, ESP32, Wi-Fi | [carrinho-iot-esp32](https://github.com/Dhaniels1/carrinho-iot-esp32) | Código e demonstração local; funcionalidades novas exigem testes no hardware |
 
-A **TechStore** e a **Óticas Malta** são projetos de frontend demonstrativos, sem serviços comerciais em operação. O **Cuidar Muriaé** é um protótipo acadêmico independente em planejamento, sem vínculo institucional ou orientações hospitalares oficiais. O **Carrinho IoT** possui recursos testados em montagem anterior e recursos novos ainda pendentes de validação física.
+A **TechStore** e o **Ateliê Lume (repositório Óticas Malta)** são sites de empresas fictícias, com imagens criadas por IA, sem serviços comerciais ou produtos reais. O **Cuidar Muriaé** é um protótipo acadêmico independente em planejamento, sem vínculo institucional ou orientações hospitalares oficiais. O **Carrinho IoT** possui recursos testados em montagem anterior e recursos novos ainda pendentes de validação física.
 
 **Privacidade:** o repositório `upando-solo` é privado e não foi incluído no portfólio público. Caso seja publicado no futuro, o acesso e os dados pessoais precisam ser revisados separadamente.
 
