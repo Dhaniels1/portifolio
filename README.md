@@ -2,6 +2,7 @@
 
 Portfólio pessoal desenvolvido em **HTML5 e CSS3**, com layout responsivo e acessível, para apresentar projetos reais de desenvolvimento web, APIs e análise de dados.
 
+**Site publicado:** https://dhaniels1.github.io/portifolio/  
 **Repositório:** https://github.com/Dhaniels1/portifolio
 
 > O nome exibido neste portfólio é **Daniel Castro**, conforme a identidade desejada. O projeto original foi modernizado em outubro de 2026.
@@ -57,16 +58,13 @@ python -m unittest discover -s tests -v
 
 O workflow `.github/workflows/validacao.yml` roda os testes em pushes e pull requests.
 
-## Hospedar com GitHub Pages (opcional)
+## Publicação com GitHub Pages
 
-O projeto é compatível com GitHub Pages porque utiliza arquivos HTML/CSS estáticos e caminhos relativos.
+O site está publicado em **https://dhaniels1.github.io/portifolio/**. A publicação da versão revisada foi confirmada pelo workflow automático **pages build and deployment** do GitHub em 19/10/2026, com etapa de deploy concluída com sucesso.
 
-1. Acesse **Settings → Pages** do repositório.
-2. Em **Build and deployment**, escolha **Deploy from a branch**.
-3. Selecione a branch **main** e a pasta **/(root)**, depois salve.
-4. Após a publicação, o endereço esperado para esse nome de repositório será `https://dhaniels1.github.io/portifolio/`, **desde que o GitHub Pages esteja habilitado e o deploy tenha funcionado**.
+A configuração utiliza a branch **main**. Como o site é estático e usa caminhos relativos, não necessita backend, banco de dados nem build com Node.js. Novos pushes na branch de publicação podem iniciar uma nova implantação no GitHub Pages.
 
-A simples presença do código na branch `main` não garante que o site já esteja publicado via Pages.
+Para conferir ou alterar a configuração, acesse **Settings → Pages** no repositório.
 
 ## Contato e transparência
 
