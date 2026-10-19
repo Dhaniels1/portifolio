@@ -213,3 +213,41 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--mint);outline-offse
   .footer-inner{flex-direction:column;align-items:start}.footer-right{gap:13px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.project-card,a{transition:none!important}.btn:hover,.project-card:hover{transform:none}}
+
+/* Experiência profissional e capas dos novos projetos. */
+.professional-highlight{padding:74px 0;border-top:1px solid #2b3d50;border-bottom:1px solid #2b3d50;background:radial-gradient(ellipse at 5% 40%,#1f3b3a66,transparent 55%),#0e1a2a}
+.professional-highlight-inner{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:65px}
+.professional-highlight h2{font-size:clamp(33px,4vw,49px);line-height:1.14;letter-spacing:-1.8px}
+.professional-highlight-copy{background:#17263a;border:1px solid #2e4654;border-radius:17px;padding:33px}
+.career-role{display:inline-block;color:#a4eedb;font-size:11px;text-transform:uppercase;letter-spacing:1.1px;font-weight:850}
+.professional-highlight-copy strong{display:block;font-size:27px;margin:7px 0 11px;letter-spacing:-.5px}
+.professional-highlight-copy p{font-size:13px;color:#b0c1ce;line-height:1.8;max-width:520px;margin-bottom:19px}
+.experience-section{background:#0e1625;border-top:1px solid #263446;border-bottom:1px solid #263446}
+.experience-card{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;background:#131f31;border:1px solid #2c3d55;border-radius:17px;padding:39px}
+.experience-company{display:flex;gap:17px;align-items:start}
+.experience-mark{flex:0 0 57px;height:57px;border-radius:13px;background:#183b38;color:#b5f0dc;border:1px solid #3a605b;display:grid;place-items:center;font:800 27px Georgia,serif}
+.experience-company .eyebrow{margin:2px 0 9px;color:#8ce9d4}
+.experience-company h3{font-size:30px;margin:0 0 4px}.experience-company span:not(.experience-mark){color:#92a4ba;font-size:11px}
+.experience-description p{font-size:13px;line-height:1.85;color:#b2c1d5;margin:14px 0 18px}
+.experience-skills{display:flex;flex-wrap:wrap;gap:8px}
+.experience-skills span{font-size:10px;font-weight:700;border:1px solid #38546a;color:#cad9eb;border-radius:6px;padding:7px 11px;background:#1b3140}
+.experience-description p.experience-note{font-size:11px;color:#889ab0;margin-bottom:0}
+.formation-card{display:flex;align-items:center;justify-content:space-between;gap:35px;margin-top:17px;border:1px solid #2c3d55;border-radius:15px;padding:28px 36px;background:#0d1827}
+.formation-card h3{font-size:20px;margin:0 0 6px;line-height:1.4}.formation-card .eyebrow{margin-bottom:8px}
+.formation-card p{font-size:12px;color:#9fb0c4;line-height:1.7;margin:0;max-width:485px}
+.preview-extension{background:linear-gradient(145deg,#e7f3f2,#d0e7e2);color:#173e46}
+.extension-kicker{font-size:12px;letter-spacing:1px;color:#2b5960}
+.extension-kicker strong{color:#15817a}.preview-extension .preview-eyebrow{color:#4d8d89;margin-top:22px}
+.preview-extension .preview-headline{font-size:34px;font-family:Georgia,serif;position:relative;z-index:2}
+.extension-cross{font:800 200px/1 Georgia,serif;color:#b7d7d0;position:absolute;right:15px;bottom:-45px}
+.extension-bottom{position:absolute;bottom:26px;left:33px;font-size:10px;font-weight:750;color:#618984}
+.preview-iot{background:radial-gradient(circle at 75% 62%,#3d5990,#152445 68%);color:#e8f4fc}
+.iot-kicker{font:800 10px 'Segoe UI',sans-serif;letter-spacing:2px;color:#8af0e2}
+.preview-iot .preview-headline{position:absolute;top:58px;left:32px;z-index:2;font-family:inherit;font-size:35px;letter-spacing:-1px}
+.iot-vehicle{position:absolute;right:16px;bottom:30px;width:200px;height:90px;transform:rotate(-13deg)}
+.iot-frame{position:absolute;left:25px;right:25px;top:13px;bottom:17px;border:7px solid #779ee2;background:#192d4f;border-radius:14px;display:grid;place-items:center;box-shadow:0 0 23px #6fa6ef70}
+.iot-frame b{font-size:21px;color:#a0ecf2;letter-spacing:1px}.iot-frame i{position:absolute;top:-13px;height:8px;width:35px;background:#64e6ce;border-radius:8px}
+.iot-wheel{position:absolute;background:#101826;border:6px solid #4e607a;border-radius:50%;height:46px;width:46px;top:20px}
+.wheel-left{left:0}.wheel-right{right:0}
+@media(max-width:750px){.professional-highlight-inner,.experience-card{grid-template-columns:1fr;gap:25px}.formation-card{display:block}.formation-card>p{margin-top:19px}}
+@media(max-width:600px){.professional-highlight{padding:55px 0}.professional-highlight-copy{padding:25px}.experience-card{padding:22px}.experience-company{gap:12px}.experience-mark{height:47px;flex-basis:47px}.formation-card{padding:22px}.preview-iot .preview-headline{font-size:30px}.iot-vehicle{right:-3px}}
