@@ -1,11 +1,15 @@
 # Portfólio — Daniel Castro
 
-Portfólio pessoal desenvolvido em **HTML5 e CSS3**, com layout responsivo e acessível, para apresentar projetos reais de desenvolvimento web, APIs e análise de dados.
+Portfólio pessoal desenvolvido em **HTML5 e CSS3**, com layout responsivo e acessível, para apresentar experiência profissional em Tecnologia da Informação, formação e projetos reais de desenvolvimento web, APIs, análise de dados e IoT.
 
 **Site publicado:** https://dhaniels1.github.io/portifolio/  
 **Repositório:** https://github.com/Dhaniels1/portifolio
 
 > O nome exibido neste portfólio é **Daniel Castro**, conforme a identidade desejada. O projeto original foi modernizado em outubro de 2026.
+
+## Experiência e formação
+
+O site apresenta **Daniel Castro** como **Auxiliar de Tecnologia da Informação na FAMINAS**, com experiência em suporte técnico, atendimento de chamados e sistemas corporativos, além de sua formação em Gestão da Tecnologia da Informação no IF Sudeste MG — Campus Muriaé. Não inclui dados internos da instituição nem detalhes confidenciais.
 
 ## Projetos apresentados
 
@@ -15,17 +19,18 @@ Portfólio pessoal desenvolvido em **HTML5 e CSS3**, com layout responsivo e ace
 | Dashboard de Vendas 2020 | Python, Dash, Plotly, Pandas | [dashboard-vendas-2020](https://github.com/Dhaniels1/dashboard-vendas-2020) | [Abrir dashboard](https://dashboard-vendas-2020.onrender.com) |
 | Óticas Malta | React, React Router, Tailwind CSS | [oticas-malta](https://github.com/Dhaniels1/oticas-malta) | Não verificada nesta revisão |
 | TechStore | HTML5, CSS3 | [TechStore](https://github.com/Dhaniels1/TechStore) | Código no GitHub |
-| TechWave | HTML5, CSS3 | [olamundoweb1](https://github.com/Dhaniels1/olamundoweb1) | Código no GitHub |
+| Cuidar Muriaé — Projeto de Extensão | JavaScript, HTML5, CSS3 | [Projeto-Extensao](https://github.com/Dhaniels1/Projeto-Extensao) | Protótipo em desenvolvimento; não é serviço oficial de hospitais |
+| Carrinho IoT com ESP32 | C++/Arduino, ESP32, Wi-Fi | [carrinho-iot-esp32](https://github.com/Dhaniels1/carrinho-iot-esp32) | Código e demonstração local; funcionalidades novas exigem testes no hardware |
 
-Os projetos **TechStore** e **TechWave** são exercícios acadêmicos e não representam serviços comerciais em funcionamento. O projeto Óticas Malta é um site de apresentação; suas informações de atendimento devem ser conferidas antes de uso comercial.
+A **TechStore** e a **Óticas Malta** são projetos de frontend demonstrativos, sem serviços comerciais em operação. O **Cuidar Muriaé** é um protótipo acadêmico independente em planejamento, sem vínculo institucional ou orientações hospitalares oficiais. O **Carrinho IoT** possui recursos testados em montagem anterior e recursos novos ainda pendentes de validação física.
 
 **Privacidade:** o repositório `upando-solo` é privado e não foi incluído no portfólio público. Caso seja publicado no futuro, o acesso e os dados pessoais precisam ser revisados separadamente.
 
 ## Páginas e navegação
 
 - `index.html`: página inicial com apresentação, tecnologias e dois projetos publicados.
-- `sobre.html`: formação, trajetória técnica e áreas de interesse.
-- `projetos.html`: cinco projetos públicos com descrições e links.
+- `sobre.html`: experiência profissional como Auxiliar de TI na FAMINAS, formação, trajetória técnica e áreas de interesse.
+- `projetos.html`: seis projetos públicos com descrições e links.
 - `contato.html`: contato por e-mail via `mailto:` e perfil público no GitHub.
 - `assets/css/style.css`: estilos e regras responsivas.
 
