@@ -2,7 +2,8 @@
 
 Portfólio pessoal desenvolvido em **HTML5 e CSS3**, com layout responsivo e acessível, para apresentar experiência profissional em Tecnologia da Informação, formação e projetos reais de desenvolvimento web, APIs, análise de dados e IoT.
 
-**Site publicado:** https://dhaniels1.github.io/portifolio/  
+**Site principal:** https://daniel-castro-portfolio.pages.dev/
+**Espelho no GitHub Pages:** https://dhaniels1.github.io/portifolio/  
 **Repositório:** https://github.com/Dhaniels1/portifolio
 
 > O nome exibido neste portfólio é **Daniel Castro**, conforme a identidade desejada. O projeto original foi modernizado em outubro de 2026.
@@ -15,14 +16,14 @@ O site apresenta **Daniel Castro** como **Auxiliar de Tecnologia da Informação
 
 | Projeto | Tecnologias principais | Código | Demonstração |
 | --- | --- | --- | --- |
-| Biblioteca Digital | Laravel 12, PHP, PostgreSQL, Sanctum | [biblioteca-api](https://github.com/Dhaniels1/biblioteca-api) | [Abrir aplicação](https://biblioteca-api-dhaniels1.onrender.com) |
+| Biblioteca Digital | Laravel 12, PHP, MySQL, Sanctum | [biblioteca-api](https://github.com/Dhaniels1/biblioteca-api) | [Abrir aplicação](https://biblioteca-api-dhaniels1.onrender.com) |
 | Dashboard de Vendas 2020 | Python, Dash, Plotly, Pandas | [dashboard-vendas-2020](https://github.com/Dhaniels1/dashboard-vendas-2020) | [Abrir dashboard](https://dashboard-vendas-2020.onrender.com) |
 | Ateliê Lume (projeto Óticas Malta) | React, React Router, Tailwind CSS | [oticas-malta](https://github.com/Dhaniels1/oticas-malta) | [Demonstração no GitHub Pages](https://dhaniels1.github.io/oticas-malta/) |
 | TechStore | HTML5, CSS3, imagens de IA | [TechStore](https://github.com/Dhaniels1/TechStore) | [Vitrine fictícia no GitHub Pages](https://dhaniels1.github.io/TechStore/) |
-| Cuidar Muriaé — Projeto de Extensão | JavaScript, HTML5, CSS3 | [Projeto-Extensao](https://github.com/Dhaniels1/Projeto-Extensao) | Protótipo em desenvolvimento; não é serviço oficial de hospitais |
+| Cuidar Muriaé — Projeto de Extensão | JavaScript, HTML5, CSS3 | [Projeto-Extensao](https://github.com/Dhaniels1/Projeto-Extensao) | [Abrir simulação 0.2](https://cuidar-muriae-demo.pages.dev/) |
 | Carrinho IoT com ESP32 | C++/Arduino, ESP32, Wi-Fi | [carrinho-iot-esp32](https://github.com/Dhaniels1/carrinho-iot-esp32) | Código e demonstração local; funcionalidades novas exigem testes no hardware |
 
-A **TechStore** e o **Ateliê Lume (repositório Óticas Malta)** são sites de empresas fictícias, com imagens criadas por IA, sem serviços comerciais ou produtos reais. O **Cuidar Muriaé** é um protótipo acadêmico independente em planejamento, sem vínculo institucional ou orientações hospitalares oficiais. O **Carrinho IoT** possui recursos testados em montagem anterior e recursos novos ainda pendentes de validação física.
+A **TechStore** e o **Ateliê Lume (repositório Óticas Malta)** são sites de empresas fictícias, com imagens criadas por IA, sem serviços comerciais ou produtos reais. O **Cuidar Muriaé** é um protótipo acadêmico independente em planejamento, sem vínculo institucional: a versão 0.2 utiliza apenas unidades e informações fictícias, não orientações de hospitais reais. O **Carrinho IoT** possui recursos testados em montagem anterior e recursos novos ainda pendentes de validação física.
 
 **Privacidade:** o repositório `upando-solo` é privado e não foi incluído no portfólio público. Caso seja publicado no futuro, o acesso e os dados pessoais precisam ser revisados separadamente.
 
@@ -63,13 +64,15 @@ python -m unittest discover -s tests -v
 
 O workflow `.github/workflows/validacao.yml` roda os testes em pushes e pull requests.
 
-## Publicação com GitHub Pages
+## Publicação com Cloudflare Pages e GitHub Pages
 
-O site está publicado em **https://dhaniels1.github.io/portifolio/**. A publicação da versão revisada foi confirmada pelo workflow automático **pages build and deployment** do GitHub em 19/10/2026, com etapa de deploy concluída com sucesso.
+A publicação principal está em **https://daniel-castro-portfolio.pages.dev/**, conectada ao GitHub pela Cloudflare Pages.
 
-A configuração utiliza a branch **main**. Como o site é estático e usa caminhos relativos, não necessita backend, banco de dados nem build com Node.js. Novos pushes na branch de publicação podem iniciar uma nova implantação no GitHub Pages.
+Há também uma versão no **https://dhaniels1.github.io/portifolio/**. A publicação da versão revisada foi confirmada pelo workflow automático **pages build and deployment** do GitHub em 19/10/2026, com etapa de deploy concluída com sucesso.
 
-Para conferir ou alterar a configuração, acesse **Settings → Pages** no repositório.
+A configuração utiliza a branch **main**. Como o site é estático e usa caminhos relativos, não necessita backend, banco de dados nem build com Node.js. Novos pushes na branch `main` podem disparar um deploy na Cloudflare e na configuração de espelho do GitHub Pages.
+
+Para conferir o espelho, acesse **Settings → Pages** no repositório. Para a publicação principal, consulte Cloudflare Pages.
 
 ## Contato e transparência
 
