@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Estudo de caso do Cuidar Muriaé: protótipo acadêmico com unidades fictícias, navegação por contexto, checklists e governança informacional.">
+  <meta name="author" content="Daniel Castro">
+  <title>Cuidar Muriaé | Estudo de caso</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page-case">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Daniel Castro — Página inicial"><span class="brand-icon">dc<span>.</span></span><span class="brand-text">daniel<span>castro</span></span></a>
+    <nav class="site-nav" aria-label="Menu principal"><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="projetos.html" class="active">Projetos</a><a href="contato.html">Contato</a></nav>
+    <a class="header-github" href="https://github.com/Dhaniels1" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+  </div></header>
+  <main id="conteudo">
+    <section class="case-hero"><div class="container case-hero-inner">
+      <a class="case-back" href="projetos.html">← Voltar aos projetos</a>
+      <p class="eyebrow">ESTUDO DE CASO · PROTÓTIPO 0.2</p>
+      <h1>Cuidar Muriaé<span class="gradient-text">.</span></h1>
+      <p class="case-hero-lead">Como demonstrar uma jornada de orientação administrativa contextual, acessível e responsável antes de qualquer parceria com instituições de saúde.</p>
+      <div class="case-cta"><a class="btn btn-primary" href="https://cuidar-muriae-demo.pages.dev/" target="_blank" rel="noopener noreferrer">Testar demonstração ↗</a><a class="btn btn-ghost" href="https://github.com/Dhaniels1/Projeto-Extensao" target="_blank" rel="noopener noreferrer">Ver repositório ↗</a></div>
+      <p class="case-disclaimer"><strong>Nota de transparência:</strong> unidades, setores e orientações da versão atual são fictícios. Este projeto não possui parceria institucional confirmada e não fornece orientações para atendimento real.</p>
+    </div></section>
+    <section class="section"><div class="container">
+      <div class="case-stats" aria-label="Características da versão"><div><strong>02</strong><span>unidades fictícias</span></div><div><strong>08</strong><span>assuntos demonstrativos</span></div><div><strong>03</strong><span>etapas de navegação</span></div><div><strong>0</strong><span>dados pessoais coletados</span></div></div>
+      <div class="case-intro-grid"><div><p class="eyebrow">O DESAFIO</p><h2>Uma experiência que muda conforme o contexto.</h2></div><div><p>O conceito do Cuidar Muriaé parte da hipótese de que informações administrativas organizadas por unidade, assunto e setor poderiam facilitar a navegação das pessoas. A ideia ainda não foi validada com hospitais ou usuários reais.</p><p>Na versão inicial, diversos caminhos encerravam com orientações pendentes de verificação. Na 0.2, os caminhos podem ser experimentados com conteúdo inteiramente sintético, permitindo demonstrar a proposta sem atribuir regras inventadas a instituições reais.</p></div></div>
+    </div></section>
+    <section class="section case-process-section"><div class="container">
+      <p class="eyebrow">COMO FUNCIONA</p><h2>Três etapas de navegação</h2>
+      <div class="case-process-grid">
+        <article class="case-step"><span>01</span><h3>Escolher a unidade</h3><p>Aurora e Horizonte são instituições simuladas, com estruturas de informação e assuntos diferentes.</p></article>
+        <article class="case-step"><span>02</span><h3>Definir assunto e setor</h3><p>É possível buscar por termos e selecionar setores de exemplo para visualizar orientações específicas.</p></article>
+        <article class="case-step"><span>03</span><h3>Explorar orientações</h3><p>Conteúdo contextual com linguagem simples e checklist interativo que permanece apenas na memória da página.</p></article>
+      </div>
+    </div></section>
+    <section class="section"><div class="container case-intro-grid">
+      <div><p class="eyebrow">TECNOLOGIA E ARQUITETURA</p><h2>Simples por escolha, extensível por design.</h2></div>
+      <div><p>Implementado em HTML, CSS e JavaScript moderno, sem servidor, banco de dados ou dependências de aplicação. O arquivo <code>data.js</code> descreve unidades e orientações fictícias; <code>app.js</code> administra rotas, pesquisa, contexto e checklists; <code>tests.mjs</code> valida a consistência do catálogo.</p><p>O deploy acontece pelo Cloudflare Pages, conectado à branch <code>main</code> do GitHub. A decisão de manter o catálogo separado da interface facilita a futura substituição por dados revisados, se houver autorização e escopo institucional definido.</p></div>
+    </div></section>
+    <section class="section case-ethics-section"><div class="container case-intro-grid">
+      <div><p class="eyebrow">GOVERNANÇA</p><h2>Demonstrar sem simular credibilidade institucional.</h2></div>
+      <div><p>Não são utilizados nomes, logotipos ou fontes de hospitais reais para legitimar regras inventadas. O protótipo não informa horários de visita, documentos obrigatórios, vagas ou procedimentos clínicos reais. Nenhum dado de paciente é solicitado.</p><p>Uma etapa posterior dependerá da orientação acadêmica, do planejamento de atividades de extensão com a comunidade e das autorizações necessárias para validação de fontes e participação de usuários. <strong>Desenvolver um protótipo não equivale a comprovar impacto extensionista.</strong></p></div>
+    </div></section>
+    <section class="section"><div class="container"><div class="case-next"><p class="eyebrow">PRÓXIMOS PASSOS</p><h2>Do protótipo à avaliação responsável.</h2><p>Revisar requisitos com o professor, testar acessibilidade, planejar pesquisa ou interação extensionista autorizada e somente depois avaliar a incorporação de conteúdo institucional verificado.</p><div class="case-cta"><a class="btn btn-primary" href="https://cuidar-muriae-demo.pages.dev/" target="_blank" rel="noopener noreferrer">Explorar a versão 0.2 ↗</a><a class="btn btn-outline" href="projetos.html">Ver outros projetos →</a></div></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><div><a class="footer-brand" href="index.html">daniel<span>castro.</span></a><p>Projetos reais, código aberto e aprendizado contínuo.</p></div><div class="footer-right"><span>© 2026 Daniel Castro</span><a href="https://github.com/Dhaniels1" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="contato.html">Contato ↗</a></div></div></footer>
+</body>
+</html>
