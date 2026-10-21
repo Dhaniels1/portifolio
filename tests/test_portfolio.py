@@ -8,7 +8,10 @@ from urllib.parse import unquote, urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PAGES = ("index.html", "sobre.html", "projetos.html", "contato.html")
+PAGES = (
+    "index.html", "sobre.html", "projetos.html", "contato.html",
+    "estudo-cuidar.html", "estudo-biblioteca.html", "estudo-dashboard.html",
+)
 
 
 class PageParser(HTMLParser):
@@ -96,6 +99,43 @@ class PortfolioTest(unittest.TestCase):
         self.assertNotIn("upando-solo", projects.lower())
         self.assertNotIn("Café Aconchego", projects)
         self.assertNotIn("TaskFlow", projects)
+
+
+    def test_estudos_de_caso_e_integracao(self):
+        projects = (ROOT / "projetos.html").read_text(encoding="utf-8")
+        home = (ROOT / "index.html").read_text(encoding="utf-8")
+        expected = {
+            "estudo-cuidar.html": ("Projeto-Extensao", "cuidar-muriae-demo.pages.dev"),
+            "estudo-biblioteca.html": ("biblioteca-api", "biblioteca-api-dhaniels1.onrender.com"),
+            "estudo-dashboard.html": ("dashboard-vendas-2020", "dashboard-vendas-2020.onrender.com"),
+        }
+        for page, (repo, demo) in expected.items():
+            with self.subTest(page=page):
+                body = (ROOT / page).read_text(encoding="utf-8")
+                self.assertIn(repo, body)
+                self.assertIn(demo, body)
+                self.assertIn(page, projects)
+                self.assertIn(page, home)
+
+    def test_canonicos_metadados_e_sitemap(self):
+        from xml.etree import ElementTree as ET
+
+        base = "https://daniel-castro-portfolio.pages.dev/"
+        urls = {base + ("" if page == "index.html" else page) for page in PAGES}
+        for page in PAGES:
+            with self.subTest(page=page):
+                body = (ROOT / page).read_text(encoding="utf-8")
+                canonical = base + ("" if page == "index.html" else page)
+                self.assertIn('rel="canonical" href="' + canonical + '"', body)
+                for prop in ('og:title', 'og:description', 'og:url'):
+                    self.assertIn('property="' + prop + '"', body)
+                self.assertIn('name="twitter:card"', body)
+        root = ET.fromstring((ROOT / "sitemap.xml").read_text(encoding="utf-8"))
+        namespace = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+        listed = {el.text for el in root.iter(namespace + "loc")}
+        self.assertEqual(listed, urls)
+        robots = (ROOT / "robots.txt").read_text(encoding="utf-8")
+        self.assertIn(base + "sitemap.xml", robots)
 
     def test_contato_nao_finge_envio(self):
         page = (ROOT / "contato.html").read_text(encoding="utf-8")
