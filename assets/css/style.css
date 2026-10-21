@@ -299,3 +299,22 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--mint);outline-offse
 .page-case .case-ethics-section .case-intro-grid p{color:#53647b}
 .page-case .case-next .btn-outline{color:#18273d;border-color:#718098}
 .page-case .case-next .btn-outline:hover{color:#fff}
+
+
+/* Novos estudos de caso: tecnologias, leitura e controles responsivos */
+.case-tech-list{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 8px}
+.case-tech-list .tag{font-size:12px;line-height:1.45;padding:8px 12px;background:#142c39;border:1px solid #3e6d77;color:#c2f2e9;border-radius:9px}
+.page-case .case-process-section .eyebrow,.page-case .case-ethics-section .eyebrow,.page-case .case-next .eyebrow{color:#31598b}
+.page-case .case-ethics-section .case-intro-grid p{color:#53647b}
+.case-step h3{color:#19273b}
+.case-hero .case-back:focus-visible{outline-color:#9de6d9}
+.case-hero .btn-ghost:hover{border-color:#9be7d4}
+@media(max-width:610px){
+  .page-case .case-hero h1{font-size:clamp(2.65rem,11vw,4rem);overflow-wrap:anywhere}
+  .page-case .case-hero-lead{font-size:1.02rem}
+  .page-case .case-cta .btn{width:100%;justify-content:center;text-align:center}
+  .page-case .case-stats span{font-size:.75rem}
+  .page-case .case-next{padding:22px}
+  .page-case .case-process-grid{gap:12px}
+  .page-case .case-step{padding:19px}
+}
