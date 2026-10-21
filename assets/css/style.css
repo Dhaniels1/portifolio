@@ -251,3 +251,42 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--mint);outline-offse
 .wheel-left{left:0}.wheel-right{right:0}
 @media(max-width:750px){.professional-highlight-inner,.experience-card{grid-template-columns:1fr;gap:25px}.formation-card{display:block}.formation-card>p{margin-top:19px}}
 @media(max-width:600px){.professional-highlight{padding:55px 0}.professional-highlight-copy{padding:25px}.experience-card{padding:22px}.experience-company{gap:12px}.experience-mark{height:47px;flex-basis:47px}.formation-card{padding:22px}.preview-iot .preview-headline{font-size:30px}.iot-vehicle{right:-3px}}
+
+
+/* Estudo de caso — Cuidar Muriaé */
+.case-highlight{background:linear-gradient(135deg,#111c32 0%,#172848 100%);color:#fff}
+.case-highlight-inner{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(220px,1fr);gap:56px;align-items:center}
+.case-highlight .eyebrow,.case-hero .eyebrow{color:#78dbd2}
+.case-highlight h2{color:#fff;font-size:clamp(2rem,3vw,3rem);margin:.3rem 0}
+.case-highlight p{max-width:670px;line-height:1.75;color:#cad6e8}
+.case-highlight .case-note{font-size:.78rem;color:#aebcd3;margin-top:16px}
+.case-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.case-flow{display:grid;gap:12px}
+.case-flow span{display:block;border:1px solid #536983;background:#ffffff0b;border-radius:13px;padding:20px;font-weight:650;color:#eef6fc}
+.case-hero{background:linear-gradient(125deg,#10182b,#20264c);padding:78px 0 84px;color:#fff}
+.case-hero-inner{max-width:1050px}
+.case-back{display:inline-block;color:#dbe6f6;margin-bottom:36px;text-decoration:none;font-weight:600}
+.case-back:hover{text-decoration:underline}
+.case-hero h1{font-size:clamp(3rem,7vw,5.2rem);line-height:1.08;letter-spacing:-.055em;color:white;margin:0 0 22px}
+.case-hero-lead{max-width:830px;color:#dfebf7;font-size:clamp(1.05rem,1.7vw,1.34rem);line-height:1.8}
+.case-hero .btn-ghost{border:1px solid #8293b1;color:#fff}
+.case-disclaimer{font-size:.88rem;border-left:3px solid #6ac9bf;padding-left:15px;margin:32px 0 0;max-width:810px;color:#bccadb;line-height:1.65}
+.case-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-bottom:85px}
+.case-stats div{padding:24px;border:1px solid #dee5ef;border-radius:16px;background:#fff}
+.case-stats strong{display:block;font-size:2.4rem;line-height:1.1;color:#5d53c7;letter-spacing:-.05em}
+.case-stats span{display:block;font-size:.85rem;color:#576578;margin-top:7px}
+.case-intro-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:70px;align-items:start}
+.case-intro-grid h2,.case-process-section h2,.case-next h2{font-size:clamp(1.9rem,3vw,2.7rem);letter-spacing:-.04em;line-height:1.22}
+.case-intro-grid p{color:#56647a;line-height:1.86;margin-top:0}
+.case-intro-grid code{font-size:.9em}
+.case-process-section{background:#f1f4fa}
+.case-process-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:32px}
+.case-step{background:#fff;border:1px solid #e1e6f1;border-radius:18px;padding:27px}
+.case-step>span{font-size:.84rem;font-weight:800;color:#655ad0}
+.case-step h3{margin:19px 0 9px;font-size:1.2rem}
+.case-step p{font-size:.94rem;line-height:1.7;color:#627085;margin:0}
+.case-ethics-section{background:#f8fbfc}
+.case-next{background:#f2f5fb;border:1px solid #e0e8f3;border-radius:21px;padding:40px}
+.case-next p{max-width:830px;color:#607087;line-height:1.8}
+@media(max-width:800px){.case-highlight-inner,.case-intro-grid{grid-template-columns:1fr;gap:24px}.case-process-grid{grid-template-columns:1fr}.case-stats{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:55px}.case-hero{padding:45px 0 55px}}
+@media(max-width:480px){.case-stats{gap:10px}.case-stats div{padding:16px}.case-stats strong{font-size:2rem}.case-next{padding:23px}.case-flow span{padding:14px}}
