@@ -29,11 +29,15 @@ A **TechStore** e o **Ateliê Lume (repositório Óticas Malta)** são sites de 
 
 ## Páginas e navegação
 
-- `index.html`: página inicial com apresentação, tecnologias e dois projetos publicados.
+- `index.html`: página inicial com apresentação, tecnologias, destaques e links para estudos de caso.
 - `sobre.html`: experiência profissional como Auxiliar de TI na FAMINAS, formação, trajetória técnica e áreas de interesse.
-- `projetos.html`: seis projetos públicos com descrições e links.
+- `projetos.html`: seis projetos públicos com descrições, demonstrações e estudos de caso.
 - `contato.html`: contato por e-mail via `mailto:` e perfil público no GitHub.
+- `estudo-cuidar.html`: evolução de protótipo acadêmico, cenário sintético e governança.
+- `estudo-biblioteca.html`: arquitetura, autenticação, regras e testes de API REST.
+- `estudo-dashboard.html`: preparação de dados, visualizações, filtros e limitações.
 - `assets/css/style.css`: estilos e regras responsivas.
+- `robots.txt` e `sitemap.xml`: indexação e descoberta das páginas na Cloudflare.
 
 O portfólio é **estático** e não possui backend, formulário de envio, APIs próprias nem banco de dados. As aplicações citadas são projetos independentes e podem ter indisponibilidades temporárias associadas aos planos gratuitos de hospedagem.
 
@@ -56,7 +60,7 @@ Acesse `http://localhost:8000`. Nenhum `npm install` é necessário.
 
 ## Validação
 
-Há testes de integridade de links locais, navegação, identidade do portfólio e ausência de formulário que simule envio sem backend.
+Há testes de integridade de links locais, navegação, identidade do portfólio, integração de estudos de caso, metadados, sitemap e ausência de formulário que simule envio sem backend.
 
 ```bash
 python -m unittest discover -s tests -v
@@ -73,6 +77,14 @@ Há também uma versão no **https://dhaniels1.github.io/portifolio/**. A public
 A configuração utiliza a branch **main**. Como o site é estático e usa caminhos relativos, não necessita backend, banco de dados nem build com Node.js. Novos pushes na branch `main` podem disparar um deploy na Cloudflare e na configuração de espelho do GitHub Pages.
 
 Para conferir o espelho, acesse **Settings → Pages** no repositório. Para a publicação principal, consulte Cloudflare Pages.
+
+## Estudos de caso
+
+- [Cuidar Muriaé 0.2](https://daniel-castro-portfolio.pages.dev/estudo-cuidar.html): demo 100% sintética, sem parceria institucional.
+- [Biblioteca API](https://daniel-castro-portfolio.pages.dev/estudo-biblioteca.html): API REST em Laravel com CRUD e autenticação.
+- [Dashboard de Vendas](https://daniel-castro-portfolio.pages.dev/estudo-dashboard.html): Python, Dash, Plotly e análise de dados de 2020.
+
+Os conteúdos descrevem funcionalidades documentadas nos respectivos repositórios, sem afirmar métricas de impacto ou disponibilidade permanente dos serviços.
 
 ## Contato e transparência
 
