@@ -8,8 +8,8 @@ from urllib.parse import unquote, urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PAGES = (
-    "index.html", "sobre.html", "projetos.html", "contato.html",
+NAV_PAGES = ("index.html", "sobre.html", "projetos.html", "contato.html")
+PAGES = NAV_PAGES + (
     "estudo-cuidar.html", "estudo-biblioteca.html", "estudo-dashboard.html",
 )
 
@@ -57,7 +57,7 @@ class PortfolioTest(unittest.TestCase):
                 parser = parse_page(ROOT / page)
                 self.assertIn("conteudo", parser.ids)
                 links = {url for tag, url, _ in parser.links if tag == "a"}
-                self.assertTrue(set(PAGES).issubset(links))
+                self.assertTrue(set(NAV_PAGES).issubset(links))
 
     def test_links_locais_e_ancoras(self):
         for page in PAGES:
