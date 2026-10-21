@@ -290,3 +290,12 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--mint);outline-offse
 .case-next p{max-width:830px;color:#607087;line-height:1.8}
 @media(max-width:800px){.case-highlight-inner,.case-intro-grid{grid-template-columns:1fr;gap:24px}.case-process-grid{grid-template-columns:1fr}.case-stats{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:55px}.case-hero{padding:45px 0 55px}}
 @media(max-width:480px){.case-stats{gap:10px}.case-stats div{padding:16px}.case-stats strong{font-size:2rem}.case-next{padding:23px}.case-flow span{padding:14px}}
+
+
+/* Contraste das seções claras e escuras do estudo de caso */
+.page-case .case-intro-grid p{color:#b7c4d6}
+.page-case .case-process-section h2,.page-case .case-process-section h3,.page-case .case-next h2,.page-case .case-ethics-section h2{color:#17253a}
+.page-case .case-process-section p,.page-case .case-ethics-section p,.page-case .case-next p{color:#53647b}
+.page-case .case-ethics-section .case-intro-grid p{color:#53647b}
+.page-case .case-next .btn-outline{color:#18273d;border-color:#718098}
+.page-case .case-next .btn-outline:hover{color:#fff}
